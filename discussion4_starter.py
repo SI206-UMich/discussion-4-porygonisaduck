@@ -39,8 +39,7 @@ class Rectangle():
     def area(self):
         if not self.verify_input():
             return "Invalid input"
-        else
-            return self.width * self.height
+        return self.width * self.height
 
 
     # Create the "perimeter" method
@@ -48,8 +47,10 @@ class Rectangle():
     # It first verifies inputs and return "Invalid input" if they are invalid.
     # Otherwise, it returns the perimeter of the rectangle.
 
-    # YOUR CODE HERE
-    
+    def perimeter(self):
+        if not self.verify_input():
+            return "Invalid input"
+        return self.width*2 + self.height*2
 
 
 def main():
